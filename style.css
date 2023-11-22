@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    ;
+}
+
+/* title */
+.navbar {
+background: #04364A;
+padding: 15px 15px 15px 30px;
+border-radius: 50px;
+margin: 10px 20px;
+box-shadow: 0px 0px 6px 0px #00000021;
+position: fixed;
+width: 97.5%;
+}
+.navbar-nav{
+    padding-left: 30px;
+}
+.nav-link{
+    color: #ffffff;
+}
+.navbar-brand {
+    color: #ffffff;
+    font-weight: bold;
+}
+.navbar-toggler{
+    color: #ffffff;
+}
+.navbar-toggler-icon{
+    color: #ffffff;
+}
+.bg-img{
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+    filter: brightness(50%);
+}
+
+.div-title {
+    text-align: center;
+    padding-top: 25%;
+    background-image: url(recourse/head.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.div-title a {
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    background-color: #176B87;
+    border-radius: 2px;
+    font-weight: 600;
+}
+.div-title a:hover {
+    background-color: #04364A;
+}
+.title{
+    font-weight: bold;
+    color: #ffffff;
+}
+.title-description{
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 80px;
+    color: #ffffff;
+    
+}
+
+header:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 60vh;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to top, rgb(0, 0, 0), rgb(0, 0, 0, 0));
+  }
+
+/* about */
+.div-about{
+/* margin-top: 65vh ; */
+display: block  ;
+
+}
+
+#karangasem {
+    padding-top: 10px;
+  }
+  #karangasem .karangasem-frame {
+    border-radius: 20px;
+    overflow: hidden;
+    max-width: 1100px;
+    margin: 0 auto;
+    background: #aadcd3;
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.1);
+  }
+  #karangasem .karangasem-frame .karangasem-brand {
+    box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 0 20px 20px 0;
+    background-color: white;
+    padding: 20px;
+    padding-bottom: 0;
+  }
+  #karangasem .karangasem-frame .karangasem-brand img {
+    position: relative;
+    top: 20px;
+    width: 400px;
+  }
+  #karangasem .karangasem-frame .karangasem-text {
+    padding: 20px;
+  }
+  #karangasem .karangasem-frame .karangasem-text p {
+    margin-top: 8px;
+  }
