@@ -1,123 +1,212 @@
-* {
+*{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
-    ;
-}
+    font-family: 'Poppins', sans-serif;
 
-/* title */
-.navbar {
-background: #04364A;
-padding: 15px 15px 15px 30px;
-border-radius: 50px;
-margin: 10px 20px;
-box-shadow: 0px 0px 6px 0px #00000021;
-position: fixed;
-width: 97.5%;
-z-index: 10;
 }
-.navbar-nav{
-    padding-left: 30px;
+body{
+    color: black;
 }
-.nav-link{
-    color: #ffffff;
-}
-.navbar-brand {
-    color: #ffffff;
-    font-weight: bold;
-}
-.navbar-toggler{
-    color: #ffffff;
-}
-.navbar-toggler-icon{
-    color: #ffffff;
-}
-.bg-img{
-    /* position: absolute; */
-    top: 0;
-    left: 0;
+.header{
+    min-height: 100vh;
     width: 100%;
-    height: auto;
-    z-index: -1;
-    filter: brightness(50%);
+    background-image: linear-gradient(rgb(110 110 110 / 70%),rgb(0 0 0 / 70%)),url(recourse/head.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+.logo{
+    width: 250px;
 }
 
-.div-title {
-    text-align: center;
-    padding-top: 25%;
-    background-image: url(recourse/head.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
+
+/* navigasi */
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    width: 90vw;
+    position: fixed;
+    z-index: 2;
+    
 }
-.div-title a {
-    text-decoration: none;
-    color: white;
-    padding: 15px;
-    background-color: #176B87;
-    border-radius: 2px;
-    font-weight: 600;
+.nav-links{
+    flex: 1;
+    text-align: right;
 }
-.div-title a:hover {
-    background-color: #04364A;
-}
-.title{
-    font-weight: bold;
-    color: #ffffff;
-}
-.title-description{
-    font-weight: 600;
-    margin-top: 30px;
-    margin-bottom: 80px;
-    color: #ffffff;
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
     
 }
 
-header::before {
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    
+
+}    
+.nav-links ul li::after{
     content: '';
-    position: absolute;
-    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background: #64CCC5;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}    
+.nav-links ul li:hover::after{
     width: 100%;
-    height: 20%;
-    background: linear-gradient(to top,#04364A,transparent);
-    z-index: 100000;
+}
+/*animasi navigasi*/
+nav.sticky{
+    transition: 0.6s;
+    padding: 1% 6%;
+    background-color: #04364A;
+    z-index: 100;
+}
+/* bagian text awal website */
+.text-box{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+    font-weight: bold;
+}
+.text-box p{
+    margin: 30px 0 40px;
+    font-size: 20px;
+    color: white;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid #64CCC5;
+    background: #64CCC5;
+    transition: 1s;
 }
 
+nav .fa-solid{
+    display: none;
+}
 
+/* bagiantentang */
 
-#karangasem {
-    padding-top: 10px;
-  }
-  #karangasem .karangasem-frame {
-    border-radius: 20px;
-    overflow: hidden;
-    max-width: 1100px;
-    margin: 0 auto;
-    background: #aadcd3;
-    margin-top: 150px;
+.tentang {
+    padding: 200px 300px 50px 300px;
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: row;
-    box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.1);
-  }
-  #karangasem .karangasem-frame .karangasem-brand {
-    box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    border-radius: 0 20px 20px 0;
-    background-color: white;
-    padding: 20px;
-    padding-bottom: 0;
-  }
-  #karangasem .karangasem-frame .karangasem-brand img {
-    position: relative;
-    top: 20px;
-    width: 400px;
-  }
-  #karangasem .karangasem-frame .karangasem-text {
-    padding: 20px;
-  }
-  #karangasem .karangasem-frame .karangasem-text p {
-    margin-top: 8px;
-  }
+    align-items: center;
+    background: black;
+}
+.gambar-tentang{
+    width: 500px;
+    background: #DAFFFB;
+    padding: 40px;
+    border-radius: 20px 20px 20px 20px;
+}
+.tentang-text-box h1{
+    font-weight: bolder;
+    font-size: 42px;
+    padding-left: 40px;
+
+}
+.tentang-text-box p{
+    font-size: 20px;
+    padding-top: 20px;
+    padding-left: 40px;
+
+}
+.tentang-text-box{
+    background: black;
+    border: solid 1px #DAFFFB;
+    border-radius: 0px 20px 20px 0px;  
+    padding: 53px;
+    color: #DAFFFB;  
+    }
+    
+
+
+/*tampilan HP*/
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 30px;
+    }
+    .text-box p{
+        font-size: 15px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #64CCC5;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 0.5s;
+    }
+    nav .fa-solid{
+        display: block;
+        color: white;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+
+
+    /* bagiantentang */
+    .gambar-tentang{
+        width: 300px;
+    }
+    .tentang {
+        padding: 80px 50px 50px 50px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .tentang-text-box h1{
+        font-weight: bolder;
+        font-size: 32px;
+        text-align: center;
+        padding-top: 20px;
+    }
+    .tentang-text-box p{
+        font-size: 16px;
+        text-align: center;
+        padding-top: 20px;
+    }
+    .tentang-text-box{
+    background: black;
+    border-radius: 20px;    
+    }
+
+
+}

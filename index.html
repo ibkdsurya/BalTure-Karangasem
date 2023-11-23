@@ -1,85 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BaliTure</title>
+    <title>Karangasem</title>
+    <link rel="stylesheet" href="style.css">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/af526eca72.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <section class="header">
+        <header>
 
-    <!-- Navigasi -->
-    <nav class="navbar navbar-expand-lg ">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">BalTure</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link" aria-current="page" href="#">Home</a>
-              <a class="nav-link" href="#karangasem">Tentang</a>
-              <a class="nav-link" href="#">Budaya</a>
-              <a class="nav-link" href="#">Destinasi</a>
-              <a class="nav-link" href="#">Kuliner</a>
-              <a class="nav-link" href="#">Kesenian</a>
+        </header>
+        <nav>
+            <a href="index.html"><img src="recourse/logo.png" class="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">TENTANG</a></li>
+                    <li><a href="">BUDAYA</a></li>
+                    <li><a href="">DESTINASI</a></li>
+                    <li><a href="">KULINER</a></li>
+                    <li><a href="">KESENIAN</a></li>
+                </ul>
             </div>
-          </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <script type="text/javascript">
+            window.addEventListener("scroll", function(){
+                var header = document.querySelector("nav");
+                header.classList.toggle("sticky",window.scrollY > 0);
+            })
+        </script>
+        <div class="text-box">
+            <h1>Melangkah ke Keajaiban Karangasem</h1>
+            <p>Temukan kekayaan budaya dan kearifan lokal  yang bertemu <br> dalam satu harmoni yang tak terlupakan</p>
+            <a href="" class="hero-btn">Ayo Explore Lebih Lanjut</a>
         </div>
-    </nav>
 
-    <!-- Header -->
-    <header>
-        <div class="div-title">
-            <h1 class="title">Welcome to Karangasem Regency</h1>
-            <p class="title-description">Ayo dalami kebudayaan Karangasem</p>
-            <!-- <img src="recourse/head.png" alt="title" class="bg-img"> -->
-            <a href="#karangasem">Ayo Explore</a>
+    </section>
+
+    <!-- tentang -->
+    <section class="tentang"> <br><br>
+        <img src="recourse/MAP.png" alt="map" class="gambar-tentang">
+        <div class="tentang-text-box">
+            <h1>Mengenal Karangasem</h1>
+            <p>Karangasem adalah salah satu kabupaten yang terletak di Pulau Dewata Bali. Bersebelahan dengan Kabupaten Buleleng di sebelah barat, dan Kabupaten Klungkung di sebelah selatan.Kabupaten ini pernah menjadi pusat kekuasaan di Bali, dengan Kerajaan Karangasem yang berdiri pada abad ke-18 yang menyebabkan banyaknya budaya dengan kombinasi keindahan alam, warisan sejarah yang menyebabkan Karangasem menjadi destinasi yang menarik untuk dijelajahi oleh wisatawan yang ingin merasakan pesona Bali yang autentik.</p>
+        </div>
+    </section>
+
+
+
+
+    <!-- script untuk icon navigasi mobile -->
+    <script>
+
+        var navLinks = document.getElementById("navLinks")
+
+        function showMenu (){
+            navLinks.style.right = "0"
+        }
+        function hideMenu (){
+            navLinks.style.right = "-200px"
+        }
+
+    </script>
     
-    
-        </div>
 
-    </header>
 
-    <!-- content -->
-    <div id="karangasem">
-        <div class="karangasem-frame" data-aos="fade-up" data-aos-once="true">
-            <div class="karangasem-brand" data-aos="fade-up" data-aos-once="true">
-                <h2 class="brand-text">Karangasem</h2>
-                <img src="/recourse/MAP.png" alt="" srcset="">
-            </div>
-            <div class="karangasem-text" data-aos="fade-up" data-aos-once="true">
-                <h2 class="">Kabupaten Karangasem</h2>
-                <p><strong>Karangasem</strong> adalah salah satu kabupaten di Bali yang terletak di ujung Timur Pulau Bali  Beberapa catatan yang memuat asal-muasal nama karangasem adalah seperti yang diungkapkan dalam Prasasti Sading C yang terdapat di Geria Mandara, Munggu, Badung.</p>
-            </div>
-        </div>
-        </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>    
+
+
 </body>
 </html>
+
+
+
+
