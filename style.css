@@ -17,7 +17,7 @@ body{
 
 }
 .logo{
-    width: 250px;
+    width: 175px;
 }
 
 
@@ -47,7 +47,7 @@ nav{
 .nav-links ul li a{
     color: white;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 12px;
     font-weight: bold;
     
 
@@ -67,7 +67,7 @@ nav{
 /*animasi navigasi*/
 nav.sticky{
     transition: 0.6s;
-    padding: 1% 6%;
+    padding: 0.5% 6%;
     background-color: #04364A;
     z-index: 100;
 }
@@ -82,12 +82,12 @@ nav.sticky{
     text-align: center;
 }
 .text-box h1{
-    font-size: 62px;
+    font-size: 42px;
     font-weight: bold;
 }
 .text-box p{
     margin: 30px 0 40px;
-    font-size: 20px;
+    font-size: 15px;
     color: white;
 }
 .hero-btn{
@@ -96,7 +96,7 @@ nav.sticky{
     color: white;
     border: 1px solid white;
     padding: 12px 34px;
-    font-size: 13px;
+    font-size: 15px;
     background: transparent;
     position: relative;
     cursor: pointer;
@@ -114,7 +114,7 @@ nav .fa-solid{
 /* bagiantentang */
 
 .tentang {
-    padding: 200px 300px 50px 300px;
+    padding: 100px 200px 50px 200px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -128,12 +128,12 @@ nav .fa-solid{
 }
 .tentang-text-box h1{
     font-weight: bolder;
-    font-size: 42px;
+    font-size: 32px;
     padding-left: 40px;
 
 }
 .tentang-text-box p{
-    font-size: 20px;
+    font-size: 15px;
     padding-top: 20px;
     padding-left: 40px;
 
