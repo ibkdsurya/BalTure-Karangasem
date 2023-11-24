@@ -162,25 +162,42 @@ nav .fa-solid{
 .pilihan{
     margin: auto;
     text-align: center;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 80px;
+    padding-right: 80px;
 }
 .pilihan-col{
     padding-top: 40px;
     flex-basis: 31%;
     margin-bottom: 5%;
     text-align: left;
+  
     
 }
 .pilihan-col img{
     width: 100%;
     border-radius: 20px;
+    
 }
 
+.pilihan-col h3{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.pilihan-col p{
+    padding-bottom: 15px;
+    font-size: medium;
+}
+.pilihan-col .hero-btn{
+    padding: 6px 24px;
 
+}
 .pilihan-col h3,
 .pilihan-col p{
     color: #ffffff;
+    
+}
+.pilihan h1{
+    font-size: 31px;
 }
 .pilihan h1,
 .pilihan p{
@@ -231,10 +248,8 @@ nav .fa-solid{
 .bagianinti .list .item .content .topic{
     color: #08c5ef;
 }
-.buttons{
-    text-decoration: none;
-  
-}
+
+
 
 /*tampilan HP*/
 @media(max-width: 700px){
