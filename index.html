@@ -10,9 +10,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
     <script src="https://kit.fontawesome.com/af526eca72.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <section class="header" id="home">
@@ -49,7 +55,9 @@
     <section class="gabungan-tentang">
 
         <section class="tentang" id="about"> <br><br>
-            <img src="recourse/MAP.png" alt="map" class="gambar-tentang">
+            <div class="image-tentang">
+                <img src="recourse/MAP.png" alt="map" class="gambar-tentang">
+            </div>
             <div class="tentang-text-box">
                 <h1>Mengenal Karangasem</h1>
                 <p>Karangasem adalah salah satu kabupaten yang terletak di Pulau Dewata Bali. Bersebelahan dengan Kabupaten Buleleng di sebelah barat, dan Kabupaten Klungkung di sebelah selatan.Kabupaten ini pernah menjadi pusat kekuasaan di Bali, dengan Kerajaan Karangasem yang berdiri pada abad ke-18 yang menyebabkan banyaknya budaya dengan kombinasi keindahan alam, warisan sejarah yang menyebabkan Karangasem menjadi destinasi yang menarik untuk dijelajahi oleh wisatawan yang ingin merasakan pesona Bali yang autentik.</p>
@@ -92,60 +100,70 @@
 
     
     <!-- bagian budaya -->
-    <section class="bagianinti" id="budaya">
-        <!-- list item -->
-        <div class="list">
-            <div class="item">
-                <img src="recourse/budaya_perang_api.jpg" alt="">
-                <div class="content">
-                    <div class="author">BalTure</div>
-                    <div class="title">Budaya</div>
-                    <div class="topic">Perang Api</div>
-                    <div class="des">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam et aliquid eligendi architecto provident totam mollitia ab fugiat! Est esse incidunt laboriosam optio accusantium commodi tempora illum libero ad sunt!
+    <section class="budaya" id="budaya">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="recourse/budaya_pedang_pedangan.webp">
+                    <div class="content">
+                        <div class="author">BalTure</div>
+                        <div class="title">Budaya</div>
+                        <div class="topic">Tradisi Gebug Ende</div>
+                        <div class="des">
+                            Desa Seraya, Karangasem, menghiasi kalender tahunan dengan tradisi unik, Gebug Ende. Merupakan perang rotan yang memikat hati warga lokal dan wisatawan, Gebug Ende di Desa Adat Seraya bukan hanya sekadar atraksi, tetapi juga simbol permohonan hujan yang dipercayai oleh krama setempat.
+                        </div>
+                        <div class="buttons"><a href="" class="budaya-btn">Baca Lebih Lanjut</a></div>
                     </div>
-                    <div class="buttons">Baca Lebih Lanjut</div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="recourse/budaya_perang_api.webp">
+                    <div class="content">
+                        <div class="author">BalTure</div>
+                        <div class="title">Budaya</div>
+                        <div class="topic">Tradisi Teteran</div>
+                        <div class="des">
+                            Perang api atau Terteran adalah tradisi unik di wilayah Desa Adat Jasri, Kelurahan Subagan. Seperti namanya perang api, tentu media yang digunakan adalah api, kata terteran sendiri berarti melemparkan dengan kekuatan, dalam kaitan dengan upacara yadnya yang digelar di Desa Adat Jasri Kelurahan Subagan ini berarti menembak dengan kekuatan api untuk melebur segala kejahatan /atau Bhuta Kala.
+                        </div>
+                        <div class="buttons"><a href="" class="budaya-btn">Baca Lebih Lanjut</a></div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="recourse/budaya_daratan.webp">
+                    <div class="content">
+                        <div class="author">BalTure</div>
+                        <div class="title">Budaya</div>
+                        <div class="topic">Tradisi Narat</div>
+                        <div class="des">
+                            Tradisi narat atau daratan juga ada di Desa Selumbung, Kecamatan Manggis, Karangasem. Tradisi ini merupakan rangkaian dari pelaksanaan Usaba Puseh yang dilaksanakan setiap setahun sekali selama enam hari. Dalam sekali Usaba Puseh, daratan digelar dua kali yakni hari ketiga dan hari terakhir. Tradisi narat ini dilakukan oleh warga yang dalam kondisi kerauhan dengan memikul joli yang dihias dengan daun braksok dan keris. Saat suara gambelan bertalu-talu dan kencang, mereka akan berlari dan menebas tangan, punggung, maupun dada dengan keris.
+                        </div>
+                        <div class="buttons"><a href="" class="budaya-btn">Baca Lebih Lanjut</a></div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="recourse/budaya_gered_pandan.webp">
+                    <div class="content">
+                        <div class="author">BalTure</div>
+                        <div class="title">Budaya</div>
+                        <div class="topic">Tradisi Mekare-kare</div>
+                        <div class="des">
+                            Tradisi Mekare-kare atau biasa dikenal dengan Perang Pandan adalah sebuah tradisi yang dilakukan setiap tahun di Desa Tenganan, Kecamatan Manggis, Kabupaten Karangasem, Bali.
+                            Menurut kepercayaan setempat, tradisi Mekare-kare atau Upacara Perang Pandan dilakukan sebagai penghormatan kepada Dewa Indra (dewa perang) juga para leluhur.
+                        </div>
+                        <div class="buttons"><a href="" class="budaya-btn">Baca Lebih Lanjut</a></div>
+                    </div>
                 </div>
             </div>
-            <div class="item">
-                <img src="recourse/budaya_daratan.jpg" alt="">
-                <div class="content">
-                    <div class="author">BalTure</div>
-                    <div class="title">Budaya</div>
-                    <div class="topic">Daratan</div>
-                    <div class="des">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam et aliquid eligendi architecto provident totam mollitia ab fugiat! Est esse incidunt laboriosam optio accusantium commodi tempora illum libero ad sunt!
-                    </div>
-                    <div class="buttons">Baca Lebih Lanjut</div>
-                </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev">
+                <i class="fa-solid fa-caret-up"></i>
+                <span>Prev</span>
             </div>
-            <div class="item">
-                <img src="recourse/budaya_gered_pandan.jpg" alt="">
-                <div class="content">
-                    <div class="author">BalTure</div>
-                    <div class="title">Budaya</div>
-                    <div class="topic">Gered Pandan</div>
-                    <div class="des">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam et aliquid eligendi architecto provident totam mollitia ab fugiat! Est esse incidunt laboriosam optio accusantium commodi tempora illum libero ad sunt!
-                    </div>
-                    <div class="buttons">Baca Lebih Lanjut</div>
-                </div>
-            </div>
-            <div class="item">
-                <img src="recourse/budaya_pedang_pedangan.jpg" alt="">
-                <div class="content">
-                    <div class="author">BalTure</div>
-                    <div class="title">Budaya</div>
-                    <div class="topic">Tradisi Gebug Ende</div>
-                    <div class="des">
-                        Desa Seraya, Karangasem, menghiasi kalender tahunan dengan tradisi unik, Gebug Ende. Merupakan perang rotan yang memikat hati warga lokal dan wisatawan, Gebug Ende di Desa Adat Seraya bukan hanya sekadar atraksi, tetapi juga simbol permohonan hujan yang dipercayai oleh krama setempat.
-                    </div>
-                    <div class="buttons"><a href="" class="hero-btn">Ayo Explore Lebih Lanjut</a></div>
-                </div>
+            <div class="swiper-button-next">
+                <i class="fa-solid fa-caret-up"></i>
+                <span>Next</span>
             </div>
         </div>
-    
-
+         
     </section>
 
     <!-- script untuk icon navigasi mobile -->
@@ -160,9 +178,9 @@
         }
 
     </script>
-    
 
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
 
 
 </body>

@@ -2,6 +2,10 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    
 
 }
 html {
@@ -9,7 +13,7 @@ html {
 }
 
 body{
-    color: black;
+    background: black;
 }
 .header{
     min-height: 100vh;
@@ -31,7 +35,7 @@ nav{
     padding: 2% 6%;
     justify-content: space-between;
     align-items: center;
-    width: 90vw;
+    width: 100%;
     position: fixed;
     z-index: 2;
     
@@ -147,8 +151,6 @@ nav .fa-solid{
 }
 .tentang-text-box{
     /* background: black; */
-    border: solid 1px #ffffff;
-    border-radius: 0px 20px 20px 0px;  
     padding: 53px;
     color: #ffffff;  
     }
@@ -204,27 +206,101 @@ nav .fa-solid{
     color: #ffffff;
 }
 
-/* bagian inti */
-.bagianinti{
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    position: relative;
+/* budaya */
+.budaya{
+    width: 100%;
+    text-align: center;
+    height: 100vh;}
+.swiper{
+    width: 100%;
+    height: 100%;
+    background-color: #262b32;
 }
-.bagianinti .list .item{
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-}
-.bagianinti .list .item img{
+.swiper-slide img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    opacity: 50%;
+    
+    
 }
-.bagianinti .list .item .content{
+.swiper .swiper-button-next,
+.swiper .swiper-button-prev{
+    display: flex;
+    flex-direction: column;
+    transform: rotateZ(-90deg);
+    margin-left: 5rem;
+}
+
+.swiper .swiper-button-next{
+    transform: rotateZ(90deg);
+    margin-right: 5rem;
+}
+
+.swiper .swiper-button-next::after,
+.swiper .swiper-button-prev::after{
+    content: "" ;
+}
+.swiper .swiper-button-next i,
+.swiper .swiper-button-prev i{
+    font-size: 4rem;
+    -webkit-text-stroke: 0.1rem white;
+    color: transparent;
+}
+.swiper .swiper-button-next i:hover,
+.swiper .swiper-button-prev i:hover{
+    font-size: 4.2rem;
+    -webkit-text-stroke: 0.5rem #08c5ef;
+    color: transparent;
+    transition: 0.6s;
+}
+.swiper .swiper-button-next span,
+.swiper .swiper-button-prev span{
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-top: -1rem;
+    color: white;
+}
+.swiper .swiper-button-next span:hover,
+.swiper .swiper-button-prev span:hover{
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin-top: -0.8rem;
+    color: #08c5ef;
+}
+
+span.swiper-pagination-bullet{
+    width: 5rem;
+    height: 5rem;
+    opacity: 1;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.5);
+    margin-right: 2rem !important;
+}
+span.swiper-pagination-bullet:nth-child(1){
+    background: url(recourse/budaya_pedang_pedangan.webp) center no-repeat;
+    background-size: cover;
+}
+span.swiper-pagination-bullet:nth-child(2){
+    background: url(recourse/budaya_perang_api.webp) center no-repeat;
+    background-size: cover;
+}
+span.swiper-pagination-bullet:nth-child(3){
+    background: url(recourse/budaya_daratan.webp) center no-repeat;
+    background-size: cover;
+}
+span.swiper-pagination-bullet:nth-child(4){
+    background: url(recourse/budaya_gered_pandan.webp) center no-repeat;
+    background-size: cover;
+}
+span.swiper-pagination-bullet.swiper-pagination-bullet-active{
+    border: 0.2rem solid #64CCC5;
+}
+
+.content{
     position: absolute;
+    padding-top: 40px;
     top: 20%;
     width: 1140px;
     max-width: 80%;
@@ -234,22 +310,45 @@ nav .fa-solid{
     box-sizing: border-box;
     color: white;
     text-shadow: 0 5px 10px #0004;
+    text-align: left;
 }
-.bagianinti .list .item .content .author{
+.content .author{
     font-weight: bolder;
     letter-spacing: 2px;
 }
-.bagianinti .list .item .content .title,
-.bagianinti .list .item .content .topic{
+.content .title,
+.content .topic{
     font-weight: bold;
     font-size: 4em;
     line-height: 1.3em;
 }
-.bagianinti .list .item .content .topic{
+.content .topic{
     color: #08c5ef;
 }
-
-
+.content .buttons{
+    padding-top: 20px;
+}
+.content .des{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.budaya-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid #64CCC5;
+    background: #64CCC5;
+    border-radius: 5px;
+    padding: 12px 34px;
+    font-size: 15px;
+    position: relative;
+    cursor: pointer;
+}
+.budaya-btn:hover{
+    border: 1px solid #64CCC5;
+    background: #04364A;
+    transition: 1s;
+}
 
 /*tampilan HP*/
 @media(max-width: 700px){
@@ -307,8 +406,9 @@ nav .fa-solid{
         padding-top: 20px;
     }
     .tentang-text-box{
-    background: black;
     border-radius: 20px;    
+    border: solid 1px #ffffff;
+    border-radius: 20px 20px 20px 20px;  
     }
 
     .row {
