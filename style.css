@@ -247,13 +247,6 @@ nav .fa-solid{
     -webkit-text-stroke: 0.1rem white;
     color: transparent;
 }
-.swiper .swiper-button-next i:hover,
-.swiper .swiper-button-prev i:hover{
-    font-size: 4.2rem;
-    -webkit-text-stroke: 0.5rem #08c5ef;
-    color: transparent;
-    transition: 0.6s;
-}
 .swiper .swiper-button-next span,
 .swiper .swiper-button-prev span{
     font-family: 'Fjalla One', sans-serif;
@@ -263,12 +256,19 @@ nav .fa-solid{
     color: white;
 }
 .swiper .swiper-button-next span:hover,
-.swiper .swiper-button-prev span:hover{
+.swiper .swiper-button-prev span:hover {
     font-family: 'Fjalla One', sans-serif;
     font-size: 1.2rem;
     text-transform: uppercase;
     margin-top: -0.8rem;
     color: #08c5ef;
+}
+.swiper .swiper-button-next i:hover,
+.swiper .swiper-button-prev i:hover{
+    font-size: 4.2rem;
+    -webkit-text-stroke: 0.5rem #08c5ef;
+    color: transparent;
+    transition: 0.6s;
 }
 
 span.swiper-pagination-bullet{
@@ -332,23 +332,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active{
     padding-top: 10px;
     padding-bottom: 10px;
 }
-.budaya-btn{
-    display: inline-block;
-    text-decoration: none;
-    color: white;
-    border: 1px solid #64CCC5;
-    background: #64CCC5;
-    border-radius: 5px;
-    padding: 12px 34px;
-    font-size: 15px;
-    position: relative;
-    cursor: pointer;
-}
-.budaya-btn:hover{
-    border: 1px solid #64CCC5;
-    background: #04364A;
-    transition: 1s;
-}
+
 
 /*tampilan HP*/
 @media(max-width: 700px){
