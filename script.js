@@ -26,10 +26,12 @@ const handleOnUp = () => {
     }, { duration: 1200, fill: "forwards" });
     
     for(const image of track.getElementsByClassName("image")) {
-      image.animate({
-        objectPosition: `${100 + nextPercentage}% center`
-      }, { duration: 1200, fill: "forwards" });
-    }
+      if (!isNaN(nextPercentage)){
+        image.animate({
+          objectPosition: `${100 + parseInt(nextPercentage)}% center`
+        }, { duration: 1200, fill: "forwards" });
+        }
+      }
   }
 
 
@@ -44,6 +46,20 @@ window.ontouchend = e => handleOnUp(e.touches[0]);
 window.onmousemove = e => handleOnMove(e);
 
 window.ontouchmove = e => handleOnMove(e.touches[0]);
+
+// pop up image destinasi
+document.querySelectorAll('.destinasi img','.destinasi p').forEach(image =>{
+image.onclick = () =>{
+document.querySelector('.popup-image').style.display = 'block';
+document.querySelector('.popup-image img').src = image.getAttribute('src');
+document.querySelector('.popup-image p').src = image.getAttribute('src');
+
+}
+});
+document.querySelector('.popup-image span').onclick = ()=>{
+  document.querySelector('.popup-image').style.display = 'none';
+  
+}
 
 
 // js bagian budaya

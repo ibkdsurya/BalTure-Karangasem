@@ -361,15 +361,79 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active{
     object-fit: cover;
     object-position: center;
     border-radius: 20px;
+    transition: 0.2s;
+    cursor: pointer;
 }
 #image-track{
     display: flex;
     gap: 4vmin;
     left: 50%;
-    top: 60%;
-    position: absolute;
+    top: 35%;
+    position: relative;
     transform: translate(0%,-50%);
 }
+
+.title-destinasi{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.title-destinasi h1 {
+    position: absolute;
+    opacity: 0;
+    margin: 10px;
+    transition: 0.2s;
+}
+/* .title-destinasi p{
+    position: absolute;
+    top: 80%;
+    left: 10%;
+} */
+.title-destinasi:hover h1{
+    opacity: 1;
+}
+.title-destinasi:hover .image{
+    filter: brightness(70%);
+}
+
+.destinasi .popup-image{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.638);
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    display: none;
+}
+
+.destinasi .popup-image span{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 40px;
+    font-weight: bolder;
+    color: white;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.destinasi .popup-image img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    width: 900px;
+    object-fit: cover;
+}
+
 
 /* kuliner */
 .kuliner{
@@ -577,7 +641,7 @@ input:checked + label .description-kesenian{
 
 
 /*tampilan HP*/
-@media(max-width: 700px){
+@media(max-width: 768px){
     .text-box h1{
         font-size: 30px;
     }
@@ -641,5 +705,10 @@ input:checked + label .description-kesenian{
         display: flex;
         gap: 50px;
         flex-direction: column;
+    }
+
+    /* bagian destinasi */
+    .destinasi .popup-image img{
+        width: 95%;
     }
 }
